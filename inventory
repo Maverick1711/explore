@@ -1,0 +1,9 @@
+web01 ansible_host=172.31.28.202 ansible_user=ec2-user
+web02 ansible_host=172.31.22.213 ansible_user=ec2-user
+web03 ansible_host=172.31.24.36 ansible_user=ec2-user
+
+[webgrp]
+web01
+web02
+web03
+~        
