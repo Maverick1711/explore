@@ -17,7 +17,7 @@
      shell: cd /var/www/html
    - name: download web files from github
      get_url:
-       url: https://github.com/azeezsalu/techmax/archive/refs/heads/main.zip
+       url: https://github.com/Maverick1711/explore/blob/main/explore_web.zip
        dest: /var/www/html/
    - name: unzip the zip folder
      ansible.builtin.unarchive:
