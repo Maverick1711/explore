@@ -6,4 +6,4 @@ web03 ansible_host=172.31.24.36 ansible_user=ec2-user
 web01
 web02
 web03
-~        
+        
