@@ -17,7 +17,7 @@
      shell: cd /var/www/html
    - name: download web files from github
      get_url:
-       url: https://github.com/Maverick1711/explore/blob/main/explore_web.zip
+       url: https://github.com/Maverick1711/explore/raw/main/explore_web.zip
        dest: /var/www/html/
    - name: unzip the zip folder
      ansible.builtin.unarchive:
@@ -26,12 +26,12 @@
        remote_src: yes
    - name: copy webfiles from the explore directory to the html directory
      copy: 
-       src: /var/www/html/explore/
+       src: /var/www/html/2102_consructive/
        dest: /var/www/html
        remote_src: yes
    - name: remove the explore directory
      file: 
-       path: /var/www/html/explore
+       path: /var/www/html/2102_constructive
        state: absent
    - name: remove the explore_web.zip folder
      file: 
